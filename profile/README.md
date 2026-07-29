@@ -129,6 +129,8 @@ Planned scope:
        width="50%">
 </p>
 
+---
+
 ### Current Infrastructure
 
 <p align="left">
