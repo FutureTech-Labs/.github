@@ -13,13 +13,10 @@ A multi-repository GitHub organization showcasing end-to-end cloud infrastructur
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 [![Linux](https://img.shields.io/badge/Linux-Ubuntu-FCC624?style=flat-square&logo=linux&logoColor=black)](https://ubuntu.com/)
 [![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-Backend-black?style=flat-square&logo=express)](https://expressjs.com/)
 [![Next.js](https://img.shields.io/badge/Next.js-Frontend-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Typed-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-
-[![Argo CD](https://img.shields.io/badge/Argo_CD-Planned-EF7B4D?style=flat-square&logo=argo&logoColor=white)](https://argoproj.github.io/cd/)
-[![Prometheus](https://img.shields.io/badge/Prometheus-Planned-E6522C?style=flat-square&logo=prometheus&logoColor=white)](https://prometheus.io/)
-[![Grafana](https://img.shields.io/badge/Grafana-Planned-F46800?style=flat-square&logo=grafana&logoColor=white)](https://grafana.com/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
@@ -129,7 +126,7 @@ Planned scope:
 <p align="left">
   <img src="assets/architecture/current-architecture.png"
        alt="Future GitOps Architecture"
-       width="100%">
+       width="50%">
 </p>
 
 ### Current Infrastructure
@@ -137,7 +134,7 @@ Planned scope:
 <p align="left">
   <img src="assets/architecture/infra-architecture.png"
        alt="Future GitOps Architecture"
-       width="100%">
+       width="50%">
 </p>
 
 ## Planned Future Architecture
@@ -177,7 +174,7 @@ GitHub
 <p align="left">
   <img src="assets/architecture/planned-architecture.png"
        alt="Future GitOps Architecture"
-       width="80%">
+       width="100%">
 </p>
 
 ---
