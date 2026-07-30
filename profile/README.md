@@ -9,20 +9,11 @@ A multi-repository GitHub organization showcasing end-to-end cloud infrastructur
 </div>
 
 <p align="center">
-  <a href="https://aws.amazon.com/"><img src="https://img.shields.io/badge/AWS-Cloud-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS"></a>
-  <a href="https://www.terraform.io/"><img src="https://img.shields.io/badge/Terraform-IaC-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"></a>
-  <a href="https://kubernetes.io/"><img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes"></a>
-  <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"></a>
-  <a href="https://github.com/features/actions"><img src="https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"></a>
-  <a href="https://ubuntu.com/"><img src="https://img.shields.io/badge/Linux-Ubuntu-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"></a>
+  <a href="https://aws.amazon.com/"><img src="https://img.shields.io/badge/AWS-Cloud-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS"></a> <a href="https://www.terraform.io/"><img src="https://img.shields.io/badge/Terraform-IaC-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"></a> <a href="https://kubernetes.io/"><img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes"></a> <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"></a> <a href="https://github.com/features/actions"><img src="https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"></a> <a href="https://ubuntu.com/"><img src="https://img.shields.io/badge/Linux-Ubuntu-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"></a>
 </p>
 
 <p align="center">
-  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-Frontend-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"></a>
-  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-Runtime-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"></a>
-  <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/Express.js-Backend-black?style=flat-square&logo=express" alt="Express.js"></a>
-  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Typed-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></a>
-  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"></a>
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-Frontend-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"></a> <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-Runtime-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"></a> <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/Express.js-Backend-black?style=flat-square&logo=express" alt="Express.js"></a> <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Typed-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></a> <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB"></a>
 </p>
 
 ## Introduction
@@ -31,14 +22,14 @@ A multi-repository GitHub organization showcasing end-to-end cloud infrastructur
 
 Rather than a single monolithic project, FutureTech Labs is split into independently owned repositories — application services, infrastructure-as-code, and (eventually) GitOps configuration — mirroring the repository boundaries used by real platform and DevOps teams.
 
-The system currently in place provisions AWS infrastructure with Terraform, bootstraps a self-hosted GitHub Actions runner, and installs a multi-node Kubernetes cluster using Kubespray — all triggered automatically through a single CI/CD pipeline.
+The system currently in place provisions AWS infrastructure with Terraform, bootstraps a self-hosted GitHub Actions runner, and installs a multi-node Kubernetes cluster using Kubespray — triggered automatically through a dedicated infrastructure pipeline, separate from the application CI pipelines.
 
 > [!NOTE]
 > **FutureTech Labs** is an educational and portfolio organization focused on building and documenting production-oriented DevOps, cloud infrastructure, Kubernetes, and GitOps practices. While inspired by real-world engineering patterns, the repositories are developed as a hands-on learning platform to explore modern platform engineering concepts and demonstrate practical implementation.
 
 ## Mission
 
-To build and document a complete, working cloud-native platform — from application code to a self-provisioning Kubernetes cluster — using the same tools, patterns, and operational discipline expected in production DevOps and platform engineering roles.
+Build and document a production-oriented cloud-native platform using modern DevOps, Kubernetes, Infrastructure as Code, CI/CD, and GitOps practices while following engineering workflows commonly used in industry.
 
 Every repository in this organization is designed to be read, not just run: infrastructure decisions, failure modes, and their resolutions are documented as they're encountered, rather than presented only in a finished state.
 
@@ -52,28 +43,6 @@ Every repository in this organization is designed to be read, not just run: infr
 | [`futuretech-backend`](https://github.com/FutureTech-Labs/futuretech-backend)   | REST API and business logic                                  | Node.js, Express, MongoDB, Docker                          | Active         |
 | [`futuretech-infra`](https://github.com/FutureTech-Labs/futuretech-infra)       | Infrastructure provisioning and Kubernetes cluster bootstrap | Terraform, AWS, Kubespray, Ansible, GitHub Actions         | Active         |
 | [`futuretech-gitops`](https://github.com/FutureTech-Labs/futuretech-gitops)     | Kubernetes manifests and GitOps configuration                | Kubernetes YAML, Argo CD (planned), Cert-Manager (planned) | In Development |
-
----
-
-## Repository Relationship
-
-The repositories within **FutureTech Labs** are designed with clear separation of responsibilities, following a structure commonly used in modern software engineering and platform teams.
-
-```
-FutureTech-Labs
-│
-├── futuretech-frontend
-│      └── Next.js customer-facing web application
-│
-├── futuretech-backend
-│      └── Express.js REST API and business services
-│
-├── futuretech-infra
-│      └── AWS infrastructure provisioning and Kubernetes cluster automation
-│
-└── futuretech-gitops
-       └── Kubernetes manifests and GitOps configuration
-```
 
 ---
 
@@ -100,7 +69,7 @@ FutureTech-Labs
 - Auto Scaling Group and Launch Template provisioning for Kubernetes nodes
 - Self-hosted GitHub Actions runner, deployed via Terraform
 - Kubespray (Ansible) for automated Kubernetes installation, included as a Git submodule
-- A single GitHub Actions pipeline spanning infrastructure provisioning through cluster bootstrap
+- A dedicated GitHub Actions pipeline spanning infrastructure provisioning through cluster bootstrap
 
 **Pipeline flow:**
 
@@ -126,7 +95,7 @@ Planned scope:
 
 <p align="left">
   <img src="assets/architecture/current-architecture.png"
-       alt="Future GitOps Architecture"
+       alt="Current end-to-end architecture: application CI/CD alongside the infrastructure and Kubernetes provisioning pipeline"
        width="50%">
 </p>
 
@@ -136,7 +105,7 @@ Planned scope:
 
 <p align="left">
   <img src="assets/architecture/infra-architecture.png"
-       alt="Future GitOps Architecture"
+       alt="Current AWS infrastructure: VPC, subnets, security groups, Auto Scaling Group, and self-hosted runner"
        width="50%">
 </p>
 
@@ -151,7 +120,7 @@ GitHub
   └── futuretech-gitops
               │
               ▼
-      GitHub Actions
+        GitHub Actions
               │
               ▼
           Terraform
@@ -176,7 +145,7 @@ GitHub
 
 <p align="left">
   <img src="assets/architecture/planned-architecture.png"
-       alt="Future GitOps Architecture"
+       alt="Planned GitOps architecture: Argo CD reconciling cluster state from futuretech-gitops"
        width="100%">
 </p>
 
@@ -203,63 +172,57 @@ GitHub
 
 ### DevOps & Infrastructure
 
-| Technology               | Purpose                                   |
-| ------------------------ | ----------------------------------------- |
-| AWS                      | Cloud infrastructure provider             |
-| Terraform                | Infrastructure as Code                    |
-| Docker                   | Application containerization              |
-| Kubernetes               | Container orchestration                   |
-| Kubespray                | Automated Kubernetes cluster installation |
-| GitHub Actions           | CI/CD automation                          |
-| GitHub OIDC              | Federated, keyless authentication to AWS  |
-| Linux                    | Node and runner operating system          |
-| NGINX                    | Reverse proxy                             |
-| Argo CD _(planned)_      | GitOps continuous delivery                |
-| Prometheus _(planned)_   | Metrics collection                        |
-| Grafana _(planned)_      | Observability dashboards                  |
-| Cert-Manager _(planned)_ | Automated TLS certificate management      |
+| Technology               | Purpose                                                   |
+| ------------------------ | --------------------------------------------------------- |
+| AWS                      | Cloud infrastructure provider                             |
+| Terraform                | Infrastructure as Code                                    |
+| Docker                   | Application containerization                              |
+| Kubernetes               | Container orchestration                                   |
+| Kubespray                | Automated Kubernetes cluster installation                 |
+| GitHub Actions           | CI/CD automation                                          |
+| GitHub OIDC              | Federated, keyless authentication to AWS                  |
+| Linux                    | Node and runner operating system                          |
+| NGINX _(planned)_        | Reverse proxy, once workloads are exposed via the cluster |
+| Argo CD _(planned)_      | GitOps continuous delivery                                |
+| Prometheus _(planned)_   | Metrics collection                                        |
+| Grafana _(planned)_      | Observability dashboards                                  |
+| Cert-Manager _(planned)_ | Automated TLS certificate management                      |
 
 ---
 
 ## CI/CD Workflow
 
-**Application repositories** (`futuretech-frontend`, `futuretech-backend`):
+Application and infrastructure changes flow through two independent pipelines, each scoped to its own repository:
 
 ```
-Push to main
-      │
-      ▼
+Application repositories (frontend / backend)
+     │
+     ▼
 GitHub Actions CI
-      │
-      ▼
-Build Docker Image
-      │
-      ▼
-Push to Docker Hub
+     │
+     ▼
+Build & Push Docker Image
+     │
+     ▼
+Docker Hub
+
+
+Infrastructure repository (infra)
+     │
+     ▼
+GitHub Actions (Terraform)
+     │
+     ▼
+AWS Infrastructure Provisioning
+     │
+     ▼
+Kubespray
+     │
+     ▼
+Kubernetes Cluster
 ```
 
-**Infrastructure repository** (`futuretech-infra`):
-
-```
-Push to main (or manual dispatch)
-      │
-      ▼
-Terraform init → validate → plan → apply
-      │
-      ▼
-Provision VPC, Security Groups, ASG, Launch Template
-      │
-      ▼
-Discover Kubernetes node IPs (AWS tag-based query)
-      │
-      ▼
-Generate Kubespray inventory
-      │
-      ▼
-Run Kubespray → install Kubernetes + Calico CNI
-```
-
-All infrastructure-affecting workflows authenticate to AWS via GitHub OIDC — no long-lived AWS credentials are stored as repository secrets.
+The two pipelines are independent today; the planned GitOps setup (Argo CD watching `futuretech-gitops`) is what will eventually connect published application images to cluster deployments automatically.
 
 ---
 
@@ -299,14 +262,6 @@ Kubespray, included as a Git submodule, handles the full cluster bootstrap: cont
 - Automated certificate issuance and renewal via Cert-Manager
 
 ---
-
-## Contribution
-
-FutureTech Labs is currently maintained as a personal portfolio and learning project. Feedback, suggestions, bug reports, and discussions are welcome through the individual repositories.
-
-## License
-
-Unless otherwise specified, all repositories within this organization are released under the MIT License. Refer to the `LICENSE` file in each repository for details.
 
 ## Contact
 
